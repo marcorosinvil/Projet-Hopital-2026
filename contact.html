@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hôpital ITAC - Contact</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-sA+e2pVw2H6k4g8Hc3sXkYf1qGQwWv4h8f+v9gR0h3s=" crossorigin="" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <a href="index.html"><img src="images/logo.png" alt="Logo de l'hôpital ITAC"></a>
+      </div>
+      <div class="brand">
+        <h1>Hôpital ITAC</h1>
+        <p>Soins, confiance et innovation</p>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Accueil</a>
+        <a href="a-propos.html">À propos</a>
+        <a href="services.html">Services</a>
+        <a href="medecins.html">Médecins</a>
+        <a href="rendez-vous.html">Rendez-vous</a>
+        <a href="urgences.html">Urgences</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-title">
+      <h2>Contact</h2>
+      <p>Retrouvez nos coordonnées et prenez contact avec nos services pour chaque besoin.</p>
+    </section>
+
+    <div class="contact-layout">
+      <div class="contact-main">
+        <section class="content-section contact-grid">
+          <div>
+            <h3><i class="fas fa-map-location-dot"></i> Adresse</h3>
+            <p>Rue du quiae, sud Haiti</p>
+          </div>
+          <div>
+            <h3><i class="fas fa-phone"></i> Téléphone</h3>
+            <p><a href="tel:+50947457636">+509 4745 7636</a></p>
+          </div>
+          <div>
+            <h3><i class="fas fa-envelope"></i> Email</h3>
+            <p><a href="mailto:hopital-itac@gmail.com">hopital-itac@gmail.com</a></p>
+          </div>
+          <div>
+            <h3><i class="fab fa-whatsapp"></i> WhatsApp</h3>
+            <p><a href="https://wa.me/50947457636" target="_blank" rel="noopener noreferrer">Envoyer un message</a></p>
+          </div>
+        </section>
+
+        <section class="content-section">
+          <h3>Heures d’ouverture</h3>
+          <p>Notre accueil est ouvert tous les jours de 08:00 à 18:00. Les urgences restent disponibles 24h/24.</p>
+        </section>
+
+      </div>
+
+      <section class="content-section contact-map-section">
+        <h3><i class="fas fa-map-marked-alt"></i> Localisation (GPS)</h3>
+        <p>Vous pouvez déplacer le marqueur ou ouvrir la carte en plein écran.</p>
+        <div id="map" data-lat="18.190768" data-lng="-73.7505614" data-zoom="17" aria-label="Carte de localisation" data-address="Rue du Quai, 1re Bourdet, Les Cayes, Sud Department, Haiti"></div>
+        <p class="muted">Voir sur <a href="https://www.openstreetmap.org/?mlat=18.190768&mlon=-73.7505614#map=17/18.190768/-73.7505614" target="_blank" rel="noopener">OpenStreetMap</a></p>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Hôpital ITAC - Projet académique ITAC</p>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-o9N1j8qT11Yk2mKp2bM0b2s6H2Qf5s0z6bG8g7g9Y+M=" crossorigin=""></script>
+  <script>
+    (function(){
+      var mapEl = document.getElementById('map');
+      if (!mapEl) return;
+      var lat = parseFloat(mapEl.dataset.lat) || 18.5944;
+      var lng = parseFloat(mapEl.dataset.lng) || -72.3074;
+      var zoom = parseInt(mapEl.dataset.zoom) || 13;
+      var map = L.map('map');
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+      }).addTo(map);
+
+      // Option to show the whole country of Haiti
+      if (mapEl.dataset.region && mapEl.dataset.region.toLowerCase() === 'haiti') {
+        // Bounding box for Haiti (approximate) to include main islands
+        var haitiBounds = L.latLngBounds([[17.6, -74.6], [20.2, -71.0]]);
+        map.fitBounds(haitiBounds, {padding: [20,20]});
+        var center = haitiBounds.getCenter();
+        var marker = L.marker(center, {draggable: true}).addTo(map);
+      } else {
+        map.setView([lat, lng], zoom);
+        var marker = L.marker([lat, lng], {draggable: true}).addTo(map);
+      }
+
+      marker.on('dragend', function(e){
+        var p = e.target.getLatLng();
+        console.log('Marker moved to', p.lat, p.lng);
+      });
+    })();
+  </script>
+</body>
+</html>

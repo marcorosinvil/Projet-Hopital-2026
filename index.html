@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5/css/all.min.css">
+  <title>Hôpital ITAC - Accueil</title>
+</head>
+
+<body class="home-page">
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <a href="index.html"><img src="images/logo.png" alt="Logo de l'hôpital ITAC"></a>
+      </div>
+      <div class="brand">
+        <h1 data-i18n="brand.title">Hôpital ITAC</h1>
+        <p data-i18n="brand.tagline">Soins, confiance et innovation</p>
+      </div>
+      <div class="lang-select">
+        <label for="lang" class="sr-only">Langue</label>
+        <select id="lang" aria-label="Choisir la langue">
+          <option value="fr">Français</option>
+          <option value="en">English</option>
+        </select>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html" data-i18n="nav.home">Accueil</a>
+        <a href="a-propos.html" data-i18n="nav.about">À propos</a>
+        <a href="services.html" data-i18n="nav.services">Services</a>
+        <a href="medecins.html" data-i18n="nav.doctors">Médecins</a>
+        <a href="rendez-vous.html" data-i18n="nav.appointments">Rendez-vous</a>
+        <a href="urgences.html" data-i18n="nav.emergency">Urgences</a>
+        <a href="faq.html" data-i18n="nav.faq">FAQ</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="emergency-bar" role="region" aria-label="Urgences">
+    <div class="container">
+      <strong data-i18n="emergency.title">URGENCE 24/7 :</strong>
+      <a href="tel:+50944757508" class="emergency-phone" data-i18n="emergency.phone">+509 44757508</a>
+      <span class="emergency-note" data-i18n="emergency.note">Transport médicalisé disponible • Entrée urgences : Bâtiment A</span>
+    </div>
+  </div>
+
+  <main>
+    <!-- Carrousel supprimé -->
+    <section class="hero container">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <h2 data-i18n="hero.title">Bienvenue à l’hôpital ITAC</h2>
+          <p data-i18n="hero.lead">Soins spécialisés, équipe pluridisciplinaire et prise en charge personnalisée.</p>
+          <div class="hero-actions">
+            <a class="btn" href="services.html" data-i18n="hero.cta.services">Voir les services</a>
+            <a class="btn btn-secondary" href="rendez-vous.html" data-i18n="hero.cta.appointment">Prendre rendez-vous</a>
+          </div>
+        </div>
+        <div class="hero-contact">
+          <div class="contact-card">
+            <h4 data-i18n="contact.quick.title">Contact rapide</h4>
+            <p class="phone" data-i18n="contact.quick.phone">Tél. urgences : <a href="tel:+50944757508">+509 44757508</a></p>
+            <p data-i18n="contact.quick.appointment">Rendez-vous : <a href="rendez-vous.html">Prendre un rendez-vous</a></p>
+            <a class="btn btn-outline" href="contact.html" data-i18n="contact.quick.contact">Nous contacter</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container services-preview">
+      <h3 data-i18n="services.title">Nos principaux services</h3>
+      <div class="service-grid">
+        <div class="service-card">
+          <h4 data-i18n="services.emergency.title">Urgences</h4>
+          <p data-i18n="services.emergency.text">Prise en charge immédiate 24/7 par nos équipes d'urgence.</p>
+        </div>
+        <div class="service-card">
+          <h4 data-i18n="services.surgery.title">Chirurgie</h4>
+          <p data-i18n="services.surgery.text">Bloc opératoire moderne et équipes chirurgicales spécialisées.</p>
+        </div>
+        <div class="service-card">
+          <h4 data-i18n="services.maternity.title">Maternité</h4>
+          <p data-i18n="services.maternity.text">Accompagnement complet de la grossesse et de l'accouchement.</p>
+        </div>
+      </div>
+      <p class="services-cta"><a href="services.html" class="btn" data-i18n="services.cta">Voir tous les services</a></p>
+    </section>
+
+    <section class="container doctor-preview">
+      <h3 data-i18n="doctors.title">Nos médecins</h3>
+      <div class="doctor-grid">
+        <article>
+          <img src="images/logo.png" alt="Dr. Dupont" class="doctor-photo">
+          <h4 data-i18n="doctors.dr1.name">Dr. Marie Dupont</h4>
+          <p data-i18n="doctors.dr1.title">Cardiologie — Chef de service</p>
+        </article>
+        <article>
+          <img src="images/logo.png" alt="Dr. Martin" class="doctor-photo">
+          <h4 data-i18n="doctors.dr2.name">Dr. Paul Martin</h4>
+          <p data-i18n="doctors.dr2.title">Pédiatrie — Spécialiste</p>
+        </article>
+      </div>
+      <p class="services-cta"><a href="medecins.html" class="btn btn-secondary">Voir toutes les équipes</a></p>
+    </section>
+
+        <section class="container gallery">
+      <h3>Galerie photos</h3>
+      <p class="muted">Quelques vues de nos locaux et équipes.</p>
+      <div class="gallery-grid">
+                <figure>
+                    <img src="images/accueil1.jpg" alt="accueil" data-filename="accueil1.jpg">
+                    <figcaption>accueil</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/accueil2.jpg" alt="accueil" data-filename="accueil2.jpg">
+                    <figcaption>accueil</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/accueil3.jpg" alt="accueil" data-filename="accueil3.jpg">
+                    <figcaption>accueil</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/logo.png" alt="logo" data-filename="logo.png">
+                    <figcaption>logo</figcaption>
+                </figure>
+      </div>
+    </section>
+
+    <section class="container info-grid">
+      <article>
+        <h3>Qualité des soins</h3>
+        <p>Nos équipes travaillent pour offrir des soins personnalisés et sécurisés dans chaque spécialité.</p>
+      </article>
+      <article>
+        <h3>Équipe experte</h3>
+        <p>Des professionnels expérimentés et à l’écoute pour un accompagnement serein.</p>
+      </article>
+      <article>
+        <h3>Accès rapide</h3>
+        <p>Rendez-vous simplifiés, information d’urgence claire et parcours patient fluide.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Hôpital ITAC - Projet académique ITAC</p>
+    </div>
+  </footer>
+    <script src="js/i18n.js"></script>
+    <script src="js/gallery.js"></script>
+  </body>
+  </html>
+
