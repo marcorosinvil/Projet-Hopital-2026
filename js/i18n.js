@@ -1,7 +1,7 @@
 (function(){
   const translations = {
     fr: {
-      'brand.title': 'Hôpital ITAC',
+      'brand.title': 'ACCO Hôpital',
       'brand.tagline': 'Soins, confiance et innovation',
       'nav.home': 'Accueil',
       'nav.about': 'À propos',
@@ -14,7 +14,7 @@
       'emergency.title': 'URGENCE 24/7 :',
       'emergency.phone': '+509 47 45 76 36',
       'emergency.note': 'Transport médicalisé disponible • Entrée urgences : Bâtiment A',
-      'hero.title': 'Bienvenue à l\u2019hôpital ITAC',
+      'hero.title': 'Bienvenue à ACCO Hôpital',
       'hero.lead': 'Soins spécialisés, équipe pluridisciplinaire et prise en charge personnalisée.',
       'hero.cta.services': 'Voir les services',
       'hero.cta.appointment': 'Prendre rendez-vous',
@@ -37,7 +37,7 @@
       'doctors.dr2.title': 'Pédiatrie — Spécialiste'
     },
     en: {
-      'brand.title': 'ITAC Hospital',
+      'brand.title': 'ACCO Hospital',
       'brand.tagline': 'Care, trust and innovation',
       'nav.home': 'Home',
       'nav.about': 'About',
