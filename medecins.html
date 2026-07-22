@@ -3,19 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hôpital ITAC - Médecins</title>
+  <title>ACCO Hôpital- Médecins</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <div class="logo">
-        <a href="index.html"><img src="images/logo.png" alt="Logo de l'hôpital ITAC"></a>
+      <div class="header-branding">
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.png" alt="Logo de l'hôpital ITAC"></a>
+        </div>
+        <div class="brand">
+          <h1>ACCO Hôpital</h1>
+          <p>Soins, confiance et innovation</p>
+        </div>
       </div>
-      <div class="brand">
-        <h1>Hôpital ITAC</h1>
-        <p>Soins, confiance et innovation</p>
+
+      <div class="header-actions">
+        <div class="lang-select">
+          <label for="lang" class="sr-only">Langue</label>
+          <select id="lang" aria-label="Choisir la langue">
+            <option value="fr">Français</option>
+            <option value="en">English</option>
+          </select>
+        </div>
+        <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
+
       <nav class="main-nav">
         <a href="index.html">Accueil</a>
         <a href="a-propos.html">À propos</a>
@@ -34,31 +52,38 @@
       <h2>Notre équipe médicale</h2>
       <p>Rencontrez les spécialistes qui vous accompagnent à chaque étape.</p>
     </section>
-
+      <h3>Dr. Claire Martin</h3>
+      <p>Cardiologue expérimentée spécialisée dans la prévention et le suivi des maladies cardiovasculaires.</p>
+    </div>
     <section class="content-section doctor-grid">
       <article>
+        <img src="images/doctor3.jpg" alt="Dr. Claire Martin">
         <h3>Dr. Claire Martin</h3>
         <p>Cardiologue expérimentée spécialisée dans la prévention et le suivi des maladies cardiovasculaires.</p>
       </article>
       <article>
-        <h3>Dr. Julien Lefèvre</h3>
+        <img src="images/doctor1.jpg" alt="Dr. John Kenny Beaujour">
+        <h3>Dr. John Kenny Beaujour</h3>
         <p>Pédiatre engagé dans l’accompagnement des enfants et des familles au quotidien.</p>
       </article>
       <article>
+        <img src="images/doctor2.jpg" alt="Dr. Sonia Kader">
         <h3>Dr. Sonia Kader</h3>
         <p>Radiologue dédiée à l’imagerie diagnostique moderne et précise.</p>
       </article>
       <article>
+        <img src="images/Dr. Marco.jpg" alt="Dr. Marco Rosinvil">
         <h3>Dr. Marco Rosinvil</h3>
-        <p>Gynécologue obstétricienne attentionnée et proche des patientes.</p>
+        <p>Gynécologue obstétricien attentionnée et proche des patientes.</p>
       </article>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>© 2026 Hôpital ITAC - Projet académique ITAC</p>
+      <p>© 2026 ACCO Hôpital</p>
     </div>
   </footer>
+  <script src="js/mobile-nav.js"></script>
 </body>
 </html>

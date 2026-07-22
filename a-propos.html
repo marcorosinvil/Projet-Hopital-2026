@@ -3,19 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hôpital ITAC - À propos</title>
+  <title>ACCO Hôpital - À propos</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <div class="logo">
-        <a href="index.html"><img src="images/logo.png" alt="Logo de l'hôpital ITAC"></a>
+      <div class="header-branding">
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.png" alt="Logo de l'hôpital ITAC"></a>
+        </div>
+        <div class="brand">
+          <h1>ACCO Hôpital</h1>
+          <p>Soins, confiance et innovation</p>
+        </div>
       </div>
-      <div class="brand">
-        <h1>Hôpital ITAC</h1>
-        <p>Soins, confiance et innovation</p>
+
+      <div class="header-actions">
+        <div class="lang-select">
+          <label for="lang" class="sr-only">Langue</label>
+          <select id="lang" aria-label="Choisir la langue">
+            <option value="fr">Français</option>
+            <option value="en">English</option>
+          </select>
+        </div>
+        <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
+
       <nav class="main-nav">
         <a href="index.html">Accueil</a>
         <a href="a-propos.html">À propos</a>
@@ -29,7 +47,7 @@
     </div>
   </header>
 
-  <main class="container">
+  <main class="container about-page">
     <section class="page-title">
       <h2>À propos de l’hôpital ITAC</h2>
       <p>Notre projet académique présente un hôpital moderne avec une expérience patient centralisée et des services de santé structurés.</p>
@@ -37,7 +55,7 @@
 
     <section class="content-section">
       <h3>Notre mission</h3>
-      <p>Assurer des services de santé complets et accessibles à tous, en combinant expertise médicale et technologies adaptées.</p>
+      <p class="about-text-large">Assurer des services de santé complets et accessibles à tous, en combinant expertise médicale et technologies adaptées.</p>
     </section>
 
     <section class="content-section">
@@ -58,8 +76,9 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>© 2026 Hôpital ITAC - Projet académique ITAC</p>
+      <p>© 2026 ACCO Hôpital</p>
     </div>
   </footer>
+  <script src="js/mobile-nav.js"></script>
 </body>
 </html>

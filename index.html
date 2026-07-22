@@ -6,26 +6,37 @@
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5/css/all.min.css">
-  <title>Hôpital ITAC - Accueil</title>
+  <title>ACCO Hôpital- Accueil</title>
 </head>
 
 <body class="home-page">
   <header class="site-header">
     <div class="container header-inner">
-      <div class="logo">
-        <a href="index.html"><img src="images/logo.png" alt="Logo de l'hôpital ITAC"></a>
+      <div class="header-branding">
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.png" alt="Logo de l'hôpital ITAC"></a>
+        </div>
+        <div class="brand">
+          <h1 data-i18n="brand.title">ACCO Hôpital</h1>
+          <p data-i18n="brand.tagline">Soins, confiance et innovation</p>
+        </div>
       </div>
-      <div class="brand">
-        <h1 data-i18n="brand.title">Hôpital ITAC</h1>
-        <p data-i18n="brand.tagline">Soins, confiance et innovation</p>
+
+      <div class="header-actions">
+        <div class="lang-select">
+          <label for="lang" class="sr-only">Langue</label>
+          <select id="lang" aria-label="Choisir la langue">
+            <option value="fr">Français</option>
+            <option value="en">English</option>
+          </select>
+        </div>
+        <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
-      <div class="lang-select">
-        <label for="lang" class="sr-only">Langue</label>
-        <select id="lang" aria-label="Choisir la langue">
-          <option value="fr">Français</option>
-          <option value="en">English</option>
-        </select>
-      </div>
+
       <nav class="main-nav">
         <a href="index.html" data-i18n="nav.home">Accueil</a>
         <a href="a-propos.html" data-i18n="nav.about">À propos</a>
@@ -52,7 +63,7 @@
     <section class="hero container">
       <div class="hero-inner">
         <div class="hero-copy">
-          <h2 data-i18n="hero.title">Bienvenue à l’hôpital ITAC</h2>
+          <h2 data-i18n="hero.title">Bienvenue à ACCO Hôpital </h2>
           <p data-i18n="hero.lead">Soins spécialisés, équipe pluridisciplinaire et prise en charge personnalisée.</p>
           <div class="hero-actions">
             <a class="btn" href="services.html" data-i18n="hero.cta.services">Voir les services</a>
@@ -111,20 +122,20 @@
       <p class="muted">Quelques vues de nos locaux et équipes.</p>
       <div class="gallery-grid">
                 <figure>
-                    <img src="images/accueil1.jpg" alt="accueil" data-filename="accueil1.jpg">
-                    <figcaption>accueil</figcaption>
+                    <img src="images/accueil1.jpg" alt="Hall d'accueil de l'hôpital" data-filename="accueil1.jpg">
+                    <figcaption>Hall d'accueil</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/accueil2.jpg" alt="accueil" data-filename="accueil2.jpg">
-                    <figcaption>accueil</figcaption>
+                    <img src="images/accueil2.jpg" alt="Salle de consultation moderne" data-filename="accueil2.jpg">
+                    <figcaption>Salle de consultation</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/accueil3.jpg" alt="accueil" data-filename="accueil3.jpg">
-                    <figcaption>accueil</figcaption>
+                    <img src="images/Dr. Marco.jpg" alt="Dr. Marco" data-filename="Dr. Marco.jpg">
+                    <figcaption>Dr. Marco</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/logo.png" alt="logo" data-filename="logo.png">
-                    <figcaption>logo</figcaption>
+                    <img src="images/doctor2.jpg" alt="Bloc opératoire et matériel médical" data-filename="doctor2.jpg">
+                    <figcaption>Dr. Clair Martin</figcaption>
                 </figure>
       </div>
     </section>
@@ -147,11 +158,12 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>© 2026 Hôpital ITAC - Projet académique ITAC</p>
+      <p>© 2026 ACCO Hôpital</p>
     </div>
   </footer>
     <script src="js/i18n.js"></script>
     <script src="js/gallery.js"></script>
+    <script src="js/mobile-nav.js"></script>
   </body>
   </html>
 

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" role="img" aria-label="Plan d'accès de l'hôpital">
+  <rect width="800" height="460" rx="24" fill="#f5f9ff"/>
+  <rect x="70" y="70" width="660" height="320" rx="18" fill="#ffffff" stroke="#bcd8f3" stroke-width="3"/>
+  <rect x="110" y="120" width="220" height="140" rx="16" fill="#eaf4ff" stroke="#83b5e9" stroke-width="2"/>
+  <rect x="360" y="120" width="230" height="140" rx="16" fill="#f3fbf7" stroke="#8fd19e" stroke-width="2"/>
+  <rect x="230" y="290" width="220" height="70" rx="16" fill="#fff4e8" stroke="#f2b86b" stroke-width="2"/>
+  <rect x="470" y="290" width="140" height="70" rx="16" fill="#fce9ef" stroke="#e89ab6" stroke-width="2"/>
+  <path d="M110 190h220" stroke="#5a81a8" stroke-width="6" stroke-linecap="round"/>
+  <path d="M360 190h230" stroke="#4f9d66" stroke-width="6" stroke-linecap="round"/>
+  <path d="M250 290v70" stroke="#d28f3c" stroke-width="6" stroke-linecap="round"/>
+  <path d="M470 290v70" stroke="#c76c8a" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="620" cy="170" r="38" fill="#0f6fb4"/>
+  <path d="M620 140v60M590 170h60" stroke="#ffffff" stroke-width="10" stroke-linecap="round"/>
+  <text x="130" y="100" font-family="Arial, sans-serif" font-size="24" fill="#0f172a">Hôpital ACCO</text>
+  <text x="382" y="100" font-family="Arial, sans-serif" font-size="24" fill="#0f172a">Entrée principale</text>
+  <text x="250" y="380" font-family="Arial, sans-serif" font-size="22" fill="#8a4b0f">Parking</text>
+  <text x="490" y="380" font-family="Arial, sans-serif" font-size="22" fill="#a53f62">Urgences</text>
+</svg>
